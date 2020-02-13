@@ -1,0 +1,4 @@
+bei neuem pull, falls es nicht geht:
+
+git reset --hard
+git pull 

@@ -9,6 +9,7 @@ from django.utils import timezone
 class Post(models.Model):
     # Felder und Typen definieren
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE) # definiert eine Verknüpfung/Beziehung zu einem anderen Model.
+    #author = models.ForeignKey('Marco')
     title = models.CharField(max_length=200) # Textfeld mit limitierter Anzahl von Zeichen
     text = models.TextField() # So definierst du ein langes Textfeld ohne Grössenbeschränkung
     created_date = models.DateTimeField(default=timezone.now) # ein Feld für einen Zeitpunkt (ein Datum und eine Uhrzeit)

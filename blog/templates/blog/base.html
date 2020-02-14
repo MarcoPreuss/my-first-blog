@@ -1,20 +1,20 @@
 {% load static %}
 <html>
+
     <head>
         <title>Marcos Homepage</title>
-
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
-            <img src=street.jpg>
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <h1><a href="/">Marcos First Absolutely Amazing Homepage</a></h1>
-            <h5><a href="/">--> LOVE IT OR LEAVE IT</a></h5>
 
+        <div class="page-header">
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="/">First Homepage</a></h1>
+            <img src="{% static "big-one.jpg" %}" alt="image">
+            <h5><a href="/">...</a></h5>
         </div>
         <div class="content container">
             <div class="row">
